@@ -29,7 +29,7 @@
 <tr><td>Money (financial)</td><td>Expenses you log in Spending (name, amount, currency, category, date, budget) and savings goals (balance, target, deposits and withdrawals).</td><td>To show your spending and savings back to you. Spada never asks for card or bank details.</td></tr>
 <tr><td>Rewards and settings</td><td>Brain game progress, diamonds, Buddy collection, app settings and your consent choices.</td><td>To run the app and remember your choices.</td></tr>
 <tr><td>Email preferences</td><td>Whether you opted in to tips, updates and offers by email (off unless you turn it on).</td><td>To email you only if you asked for it. You can turn it off in Settings.</td></tr>
-<tr><td>Anonymous usage stats (optional)</td><td>Only while "Help improve Spada" is on. On Android phones outside the EU/EEA, the UK and Switzerland (judged from the phone's region and time zone), that box starts ticked; you can untick it in onboarding or turn it off in Settings &rarr; Privacy. On iPhone and in those regions it starts unticked. Events include which screens and features you open (for example "a tracker was opened", "a habit was checked", "a game level was reached"), onboarding steps, operating system and version, locale, time zone and a random ID that is not linked to your account. Never your name, email, entries, health values, amounts, notes, text or location.</td><td>To see which features are used and where people get stuck, so we can improve the app. You can turn it off in Settings; this stops sending and resets the random ID.</td></tr>
+<tr><td>Anonymous usage stats (optional)</td><td>Only while "Help improve Spada" is on. On Android phones outside the EU/EEA, the UK and Switzerland (judged from the phone's region and time zone), that box starts ticked; you can untick it in onboarding or turn it off in Settings &rarr; Privacy. On iPhone and in those regions it starts unticked. Events include which screens and features you open (for example "a tracker was opened", "a habit was checked", "a game level was reached"), onboarding steps, operating system and version, locale, time zone and a random ID that is not linked to your account. Opening or saving Period, Medicine, Baby, Mood or Journal is never sent at all. Never your name, email, entries, health values, amounts, notes, text or location.</td><td>To see which features are used and where people get stuck, so we can improve the app. You can turn it off in Settings; this stops sending and resets the random ID.</td></tr>
 <tr><td>Crash and error reports</td><td>Error messages, stack traces, app version, device model and operating system version.</td><td>To find and fix crashes. Reports are sent without your account ID, and request bodies, query strings and extra data are removed before sending.</td></tr>
 </table>
 
@@ -39,7 +39,7 @@
 <h3>Device permissions</h3>
 <ul>
 <li><strong>Calendar (optional).</strong> If you connect a device calendar in Notes, Spada reads its events to show them in the app. When you ask it to, Spada also adds events to that calendar, and edits or deletes events there. Events from your device calendar are not uploaded to our servers; on your device Spada only keeps the ID of the calendar you picked and of the events it created.</li>
-<li><strong>Photos (optional).</strong> Spada only asks for permission to <em>save</em> cards you create to your photo library. It cannot read your photo library; for meal photos you pick one photo at a time (see below).</li>
+<li><strong>Photos (optional).</strong> Spada only asks for permission to <em>save</em> cards you create to your photo library. It cannot read your photo library; for meal, pet and baby photos you pick one photo at a time (see below).</li>
 <li><strong>Notifications (optional).</strong> Reminders are scheduled locally on your device. On Android, "Alarms &amp; reminders" lets them arrive on time. We do not use push notification tokens.</li>
 </ul>
 <p>Spada does not use your contacts or microphone.</p>
@@ -66,6 +66,8 @@
 <p><strong>Why.</strong> To show the photo in your food diary.</p>
 <p><strong>Where it is stored.</strong> Spada shrinks the photo to a small size (256 pixels) and keeps it on your device only. Meal photos are never uploaded, synced or shared. Spada keeps up to 365 meal photos.</p>
 <p><strong>How to delete it.</strong> Remove the photo or delete the entry in the app. Uninstalling the app also removes them. Your original photo in your library is not changed.</p>
+<p><strong>Pet and baby photos.</strong> Pet and baby profile photos are stored the same way: they stay on your device and are only included in a download card when you tap Download.</p>
+<p><strong>Week card.</strong> The food week card you can download may include small meal photos. It is saved to your photo library only when you tap Download.</p>
 
 <h2>Where your data is stored and who processes it</h2>
 <p>Your data is first saved on your device. Because you are signed in, a copy is synced to your account so you can use it on another device and restore it. We use these service providers (processors):</p>
@@ -90,6 +92,7 @@
 <h2>How long we keep data</h2>
 <ul>
 <li>Account and synced app data: until you delete it or your account. Data on your device stays until you delete the account, uninstall the app or clear its storage; signing out alone does not erase it.</li>
+<li>Daily totals (meals, water, workout and yoga): when a log gets full, its oldest entries are kept only as daily totals, for up to 1,100 days that have entries. They are deleted with your account.</li>
 <li>Crash reports: kept by Sentry for up to 90 days, then deleted automatically.</li>
 <li>Anonymous usage stats: kept by PostHog for up to 12 months, then deleted.</li>
 </ul>
