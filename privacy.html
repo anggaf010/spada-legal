@@ -29,7 +29,7 @@
 <tr><td>Money (financial)</td><td>Expenses you log in Spending (name, amount, currency, category, date, budget) and savings goals (balance, target, deposits and withdrawals).</td><td>To show your spending and savings back to you. Spada never asks for card or bank details.</td></tr>
 <tr><td>Rewards and settings</td><td>Brain game progress, diamonds, Buddy collection, app settings and your consent choices.</td><td>To run the app and remember your choices.</td></tr>
 <tr><td>Email preferences</td><td>Whether you opted in to tips, updates and offers by email (off unless you turn it on).</td><td>To email you only if you asked for it. You can turn it off in Settings.</td></tr>
-<tr><td>Anonymous usage stats (optional)</td><td>Only if "Help improve Spada" is on. On Android phones outside the EU/EEA, the UK and Switzerland (judged from your phone's region and time zone), that box is already ticked when you sign up, and you can untick it there or turn it off at any time in Settings &rarr; Privacy. On iPhone and in those regions it starts unticked: which screens and features you open (for example "a tracker was opened", "a habit was checked", "a game level was reached"), onboarding steps, operating system and version, locale, time zone and a random ID that is not linked to your account. Never your name, email, entries, health values, amounts, notes, text or location. You can turn it off at any time in Settings &rarr; Privacy.</td><td>To see which features are used and where people get stuck, so we can improve the app. You can turn it off in Settings; this stops sending and resets the random ID.</td></tr>
+<tr><td>Anonymous usage stats (optional)</td><td>Only while "Help improve Spada" is on. On Android phones outside the EU/EEA, the UK and Switzerland (judged from the phone's region and time zone), that box starts ticked; you can untick it in onboarding or turn it off in Settings &rarr; Privacy. On iPhone and in those regions it starts unticked. Events include which screens and features you open (for example "a tracker was opened", "a habit was checked", "a game level was reached"), onboarding steps, operating system and version, locale, time zone and a random ID that is not linked to your account. Never your name, email, entries, health values, amounts, notes, text or location.</td><td>To see which features are used and where people get stuck, so we can improve the app. You can turn it off in Settings; this stops sending and resets the random ID.</td></tr>
 <tr><td>Crash and error reports</td><td>Error messages, stack traces, app version, device model and operating system version.</td><td>To find and fix crashes. Reports are sent without your account ID, and request bodies, query strings and extra data are removed before sending.</td></tr>
 </table>
 
@@ -52,9 +52,14 @@
 
 <h3>Location (walk and run recording)</h3>
 <p><strong>What.</strong> When you start recording a walk or run, Spada uses your device's precise location (GPS) to record the route, distance and pace.</p>
-<p><strong>Why.</strong> Only to record the walk or run you started. Spada uses location only while a recording runs, including when the screen is off, and stops when you tap Stop. A notification (Android) or the location indicator (iPhone) is shown the whole time. Spada never uses location at other times, and never for ads or analytics.</p>
+<p><strong>Why.</strong> Only to record the walk or run you started. Spada uses location only while a recording runs, including when the screen is off, and stops when you tap Stop. A notification (Android) or the location indicator (iPhone) is shown the whole time. Apart from meal places (below), Spada never uses location at other times, and never for ads or analytics.</p>
 <p><strong>Where it is stored.</strong> The route, the pace and elevation charts and the splits are saved with the walk on your device only. They are never sent to our servers. The walk itself (date, duration, distance, steps and your note) is saved in your Spada data like a walk you log by hand, and syncs to your account through Supabase so you can see it on your other devices.</p>
 <p><strong>How to delete it.</strong> Delete the walk in the app. Deleting your account deletes all synced data and the routes on this device. You can turn off location access at any time in your phone's settings; you can still log walks by hand.</p>
+<h3>Location (meal places, optional)</h3>
+<p><strong>What.</strong> When you log a meal, you can tap "Use current location" to add the place. Spada then reads your location once, only at that moment.</p>
+<p><strong>How.</strong> Your phone's built-in map service (Apple on iPhone, Google on Android) turns the location into a place name. Spada does not send it anywhere else.</p>
+<p><strong>Where it is stored.</strong> The place is saved with the meal on this device only. It is never sent to our servers.</p>
+<p><strong>How to delete it.</strong> Remove the place or delete the meal in the app. Deleting your account also removes it from this device.</p>
 
 <h3>Meal photos (Food &amp; Drink)</h3>
 <p><strong>What.</strong> You can add a photo of a meal by taking one with the camera or picking one from your library. Spada only accesses the photos you choose.</p>
@@ -69,7 +74,7 @@
 <li><strong>Google</strong> &mdash; "Sign in with Google". Google handles your Google password; we never see it.</li>
 <li><strong>Apple</strong> &mdash; "Sign in with Apple". Apple handles your Apple Account password; we never see it. When you delete your account on iPhone, we ask Apple to revoke Spada's sign-in access.</li>
 <li><strong>Sentry (Functional Software, Inc.)</strong> &mdash; crash and error reporting.</li>
-<li><strong>PostHog (PostHog Inc.)</strong> &mdash; anonymous usage stats, only while "Help improve Spada" is on (pre-ticked at sign-up on Android outside Europe; off switch in Settings). Hosted in the EU (Frankfurt). Location lookup from your IP address is turned off, and no session recording is used.</li>
+<li><strong>PostHog (PostHog Inc.)</strong> &mdash; anonymous usage stats (off by default on iPhone and in the EU/EEA, UK and Switzerland; on by default on Android elsewhere, with an off switch in onboarding and Settings). Hosted in the EU (Frankfurt). Location lookup from your IP address is turned off, and no session recording is used.</li>
 </ul>
 <p>This version of Spada has no in-app purchases and no payment provider is active. If we add paid features, we will update this policy first.</p>
 <p>Data sent between the app and these services is encrypted in transit (HTTPS). Some providers are in, or may transfer data to, the United States. Those transfers rely on the provider's Standard Contractual Clauses and/or the EU&ndash;US Data Privacy Framework.</p>
@@ -78,7 +83,7 @@
 <ul>
 <li><strong>Contract</strong> (Art. 6(1)(b) GDPR): account, profile, content and sync, to provide the service you asked for.</li>
 <li><strong>Explicit consent</strong> (Art. 9(2)(a) GDPR): mood, journal, period, medicine and baby records. Withdraw it at any time in <strong>Settings &rarr; Privacy &amp; consent</strong>.</li>
-<li><strong>Consent</strong> (Art. 6(1)(a) GDPR): marketing email, and anonymous usage stats on iPhone and in the EU/EEA, UK and Switzerland, only if you opt in. Usage stats are never on by default there.</li>
+<li><strong>Consent</strong> (Art. 6(1)(a) GDPR): marketing email and anonymous usage stats, only if you opt in. Usage stats are never on by default for users in the EU/EEA, UK or Switzerland.</li>
 <li><strong>Legitimate interest</strong> (Art. 6(1)(f) GDPR): crash reports, to keep the app stable and secure.</li>
 </ul>
 
